@@ -13,12 +13,20 @@
     <div class="itemsmobile">
       <i class="fa-solid fa-bars"></i>
     </div>
-    <div class="itemsdesktop">
-      <p class="button2">Inicio</p>
-      <p class="button2">Catalogo</p>
-      <p class="button2">Animales</p>
-      <p class="button2">Paisajes</p>
-      <p class="button2">Animaciones</p>
+    <div class="itemsdesktop" id="navbarNav">
+        <p class="button2">Inicio</p>
+        <p class="button2">Catalogo</p>
+      <ul>
+        <li>
+          <a class="nav-link active button3" href="#animales">Animales</a>
+        </li>
+        <li>
+          <a class="nav-link active button3" href="#paisajes">Paisajes</a>
+        </li>
+        <li>
+          <a class="nav-link active button3" href="#animaciones">Animaciones</a>
+        </li>
+      </ul>
       <p class="button2">Contactos</p>
     </div>
   </nav>
@@ -30,7 +38,7 @@
   </header>
   <main class="containermobile">
     <div class="boxproduct">
-      <div class="card">
+      <div id="animales" class="card">
         <img src="./assets/css/img/animales/colibrifullcolor.jpeg" alt="colibrifullcolor">
         <h3 class="nombre">Colibri Full Color</h3>
         <div class="button">
@@ -58,7 +66,7 @@
           <p>Ver más</p>
         </div>
       </div>
-      <div class="card">
+      <div id="paisajes" class="card">
         <img src="./assets/css/img/paisajes/cerro desnudo.jpeg" alt="cerrodesnudo">
         <h3 class="nombre">Cerro Desnudo</h3>
         <div class="button">
@@ -86,7 +94,7 @@
           <p>Ver más</p>
         </div>
       </div>
-      <div class="card">
+      <div id="animaciones" class="card">
         <img src="./assets/css/img/animaciones/vegeta.jpeg" alt="vegeta">
         <h3 class="nombre">El principe Vegeta</h3>
         <div class="button">

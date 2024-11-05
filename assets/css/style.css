@@ -9,7 +9,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color:rgba(11, 155, 88, 0.822);
+    background-color:darkorange;
     color: #ffffff;
 }
 
@@ -40,8 +40,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(137, 135, 139, 0.527);
-    color:#000000;
+    background-color:  darkslategrey;
+    color: #ffffff;
 }
 
 label {
@@ -58,7 +58,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(255, 255, 255);
+    background-image: url(../css/img/background/filtro2.jpg);
 }
 
 .boxproduct {
@@ -85,6 +85,7 @@ a {
     color:#000000;
 }
 
+
 footer {
     grid-area: foot;
     display: flex;
@@ -93,7 +94,7 @@ footer {
     align-items: center;
     padding: 10px;
     text-align: center;
-    background: #6e67ac;
+    background:darkslategrey;
     color:#ffffff;
 }
 
@@ -163,7 +164,7 @@ img {
     cursor: pointer;
     font-weight: 600;
     text-align: center;
-    background-color: rgba(11, 155, 88, 0.822);
+    background-color:  rgba(11, 155, 88, 0.822);
     color:#ffffff;
     transition: background-color 1s;
     box-shadow: 5px 5px 10px rgb(54, 26, 87);
@@ -172,6 +173,27 @@ img {
 .button2:hover {
     transform:translateY(-10px);
     background-color: #6e67ac;
+}
+
+.button3 {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    background-color: #6e67ac;
+    color:#ffffff;
+    transition: background-color 1s;
+    box-shadow: 5px 5px 10px  rgba(168, 240, 245, 0.973);
+}
+
+.button3:hover {
+    transform:translateY(-10px);
+    background-color:  rgba(168, 240, 245, 0.973);
+    box-shadow: 5px 5px 10px rgb(54, 26, 87);
+    color: #000000;
 }
 
 
@@ -231,7 +253,7 @@ img {
       display: flex;
       flex-direction: column;
       align-items: center;
-      background-image: url(../css/img/background/bkcentral.webp);
+      background-image: url(../css/img/background/principal.PNG);
       background-size: cover;
       background-position: center;
     }
@@ -246,18 +268,14 @@ img {
       overflow: scroll;
     }
 
-.card {
-    background: #ffffff;
-}
+    header {
+      background-image: url(../css/img/background/footer.jpg);
+      background-size:cover;
+      background-position:center;
+    }
 
-header {
-    background-image: url(../css/img/background/filtro2.jpg);
-    background-size:cover;
-    background-position:center;
-}
-
-footer{
-    background-image: url(../css/img/background/footer.jpg);
-    color:darkorange;
-}
+    footer{
+      background-image: url(../css/img/background/footer.jpg);
+      color:darkorange;
+    }
 }
