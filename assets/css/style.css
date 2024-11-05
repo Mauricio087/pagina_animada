@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:rgba(11, 155, 88, 0.822);
+    color: #ffffff;
+}
+
+.itemsmobile {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(54, 26, 87);
+}
+
+
+.itemsdesktop {
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+header {
+    grid-area: filter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(137, 135, 139, 0.527);
+    color:#000000;
+}
+
+label {
+    padding-bottom: 5px;
+}
+
+select {
+    width: 80%;
+    padding: 5px;
+}
+
+.containermobile {
+    grid-area: products;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+}
+
+.boxproduct {
+    width: 70%;
+    margin-bottom: auto;
+    margin-top: auto;
+    overflow:scroll;
+}
+
+section {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 15px;
+    gap: 2px;
+}
+
+a {
+    padding: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid rgba(39, 41, 39, 0.24);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color:#000000;
+}
+
+footer {
+    grid-area: foot;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    background: #6e67ac;
+    color:#ffffff;
+}
+
+.icono {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 5px;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "filter"
+    "products"
+    "foot";
+    grid-template-rows: 70px 80px calc(100vh - 70px - 80px - 70px) 70px;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    box-shadow: 5px 5px 10px rgb(54, 26, 87);
+    padding: 20px 9px;
+    border-radius: 20px;
+    transition: 0.3s;
+    background-color: rgba(168, 240, 245, 0.973);
+}
+
+.card:hover {
+    transform:translateY(-10px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+
+.button {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(11, 155, 88, 0.822);
+    color:#ffffff;
+    transition: background-color 1s;
+}
+
+.button:hover {
+    background-color: #6e67ac;
+}
+
+.button2 {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(11, 155, 88, 0.822);
+    color:#ffffff;
+    transition: background-color 1s;
+    box-shadow: 5px 5px 10px rgb(54, 26, 87);
+}
+
+.button2:hover {
+    transform:translateY(-10px);
+    background-color: #6e67ac;
+}
+
+
+.nombre {
+    padding: 15px 0 0 0;
+}
+
+
+
+
+@media (min-width: 576px){
+    .layout {
+      grid-template-areas:
+      "nav filter"
+      "nav products"
+      "nav products"
+      "foot products";
+      grid-template-columns: 2fr 10fr;
+      grid-template-rows: 70px 80px calc(100vh - 70px - 80px - 90px) 90px;
+    }
+
+    .logo{
+        height: 80px;
+        transition: all 2s;
+    }
+    .logo:hover {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+      grid-area: nav;
+      padding: 10px;
+      background-image: url(../css/img/background/background-filtro.jpg);
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      row-gap: 15px;
+    }
+    .itemsmobile {
+      display: none;
+    }
+    .itemsdesktop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .containermobile {
+      grid-area: products;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(../css/img/background/bkcentral.webp);
+      background-size: cover;
+      background-position: center;
+    }
+    .boxproduct {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: auto;
+      margin-top: auto;
+      width: 95%;
+      gap: 15px;
+      padding-top: 15px;
+      overflow: scroll;
+    }
+
+.card {
+    background: #ffffff;
+}
+
+header {
+    background-image: url(../css/img/background/filtro2.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+footer{
+    background-image: url(../css/img/background/footer.jpg);
+    color:darkorange;
+}
+}
