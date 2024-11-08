@@ -18,6 +18,11 @@ nav {
     cursor: pointer;
 }
 
+.menumobile{
+    display: flex;
+    gap: 10px;
+}
+
 .logo {
     width: 100px;
     height: 60px;
@@ -25,17 +30,12 @@ nav {
     box-shadow: 5px 5px 10px rgb(54, 26, 87);
 }
 
-
 .itemsdesktop {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     cursor: pointer;
-}
-
-.submenu {
-    display: none;
 }
 
 header {
@@ -89,14 +89,13 @@ a {
     color:#000000;
 }
 
-
 footer {
     grid-area: foot;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     background:darkslategrey;
     color:#ffffff;
@@ -129,7 +128,7 @@ footer {
     padding: 20px 9px;
     border-radius: 20px;
     transition: 0.3s;
-    background-color: rgba(168, 240, 245, 0.973);
+    background-color: rgba(168, 240, 245, 0.301);
 }
 
 .card:hover {
@@ -137,11 +136,16 @@ footer {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-img {
+.animacion-img {
     width: 100%;
     aspect-ratio: 1 / 1;
+    filter: grayscale(100%);
+    transition: filter ease 0,5s;
 }
 
+.animacion-img:hover {
+    filter: grayscale(0%);
+}
 
 .button {
     display: flex;
@@ -162,6 +166,7 @@ img {
 
 .button2 {
     display: flex;
+    margin-top: 10px;
     padding: 5px 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -179,7 +184,7 @@ img {
 }
 
 .button3 {
-    display: flex;
+    display:flex;
     padding: 5px 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -198,12 +203,15 @@ img {
     color: #000000;
 }
 
+.ajusb3{
+    display:flex;
+    flex-direction:inherit;
+    gap: 10px;
+}
 
 .nombre {
     padding: 15px 0 0 0;
 }
-
-
 
 
 @media (min-width: 576px){
@@ -243,7 +251,15 @@ img {
       display: none;
     }
 
-    .submenu {
+    .menumobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .ajusb3 {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
